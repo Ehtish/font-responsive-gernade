@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centering div | Three ways</title>
+    <style>
+        *{
+            margin: 0; padding: 0;
+            box-sizing: border-box;
+        }
+        .parent{
+            background: #222831;
+            width: 100vw;
+            height: 100vh;
+            /* senond way to center div */
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+
+            /* Third way to do center */
+            display: grid;
+            place-items: center;
+        }
+        .child{
+            background:#00ADB5;
+            width: 60vw;
+            height: 60vh;
+            /* first way to do center */
+            /* position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%); */
+
+        }
+        /* It's completely responsive */
+        /* Conclusion: Third way is the fastest way to do center.  */
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            <p>Become a gernade</p>
+        </div>
+    </div>
+</body>
+</html>
